@@ -1,0 +1,100 @@
+.header{
+    background-color: #000000;
+    grid-column: 1 / -1;
+    background-image: linear-gradient(to bottom, #4d4c4c4f, #000000), url(../Image/gallery4.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 0.5fr 7fr;
+    grid-gap: 20px;
+    padding: 30px 0;
+}
+
+.content{
+    display: grid;
+    grid-template-rows: repeat(3,min-content);
+    grid-gap: 20px;
+    align-content: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+h3{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h1,h3,button{
+    color: white;
+}
+
+.header-text{
+    color: orange;
+}
+
+.header-btn{
+    background-color: orange;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    font-size: 17px;
+    transition: all 0.4s;
+    justify-self: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.navbar{
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    transition: all 0.4s;
+    margin: 0 5px;
+}
+
+a:hover{
+    border: 1px solid orange;
+    background-color: white;
+    color: orange;
+}
+
+.header-btn:hover{
+    background-color: white;
+    color: orange;
+}
+
+@media screen and (max-width: 400px) {
+    h3{
+        font-size: 25px;
+    }
+    
+    h1{
+        font-size: 35px;
+    }   
+    
+    .header-btn{
+        padding: 15px 25px;
+        font-size: 13px;
+    }
+
+    .navbar{
+        align-content: center;
+        justify-content: center;
+        text-align: center;     
+    }
+
+    a{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
